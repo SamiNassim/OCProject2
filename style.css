@@ -1,0 +1,26 @@
+.logo {
+    width: 61.09px;
+    height: 19px;
+    margin-left: 55px;
+    margin-top: 44px;
+}
+
+.nav__menu ul {
+    margin-left: 1120px;
+    list-style-type: none;
+
+}
+
+.nav__hosts {
+    display: inline-block;
+    position: absolute;
+    font-family: Raleway;
+}
+
+.nav__activity {
+    display: inline-block;
+    position: absolute;
+    margin-top: 48px;
+    margin-right: 77px;
+    font-family: Raleway;
+}
