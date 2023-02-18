@@ -2,7 +2,6 @@
 
     width: 61,09px;
     height: 19px;
-    margin-left: 55px;
     align-items: center;
 
 }
@@ -56,5 +55,26 @@ justify-content: space-between;
     color:#0065FC;
     text-decoration: 2px underline;
     text-underline-offset: -40px;
+
+}
+
+h1 {
+
+    font-family: Raleway;
+    font-style: normal;
+    font-size: 22px;
+    margin-bottom: 0;
+
+}
+
+header {
+    margin-left: 55px;
+}
+
+.subtitle {
+
+    font-family: Raleway;
+    font-size: 16px;
+    margin-top: 8px;
 
 }
