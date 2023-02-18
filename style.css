@@ -78,3 +78,35 @@ header {
     margin-top: 8px;
 
 }
+
+
+
+.search__bar {
+
+    margin-left: 55px;
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    width: 332px;
+    height: 49px;
+}
+
+.search__field {
+
+    height: 21px;
+    width: 147px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-left: 67px;
+    margin-right: 118px;
+
+}
+
+.search__button {
+
+}
+
+.fa-solid fa-location-dot {
+
+    margin-top: 16px;
+}
