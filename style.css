@@ -95,18 +95,28 @@ header {
 
     height: 21px;
     width: 147px;
-    padding-top: 14px;
-    padding-bottom: 14px;
     margin-left: 67px;
-    margin-right: 118px;
 
 }
 
 .search__button {
 
+;
+
 }
 
-.fa-solid fa-location-dot {
+.fa-solid.fa-location-dot {
 
+    margin-left: 18px;
     margin-top: 16px;
+
+}
+
+.location__icon {
+
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+
 }
