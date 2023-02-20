@@ -83,27 +83,25 @@ header {
 
 .search__bar {
 
+    display: flex;
     margin-left: 55px;
     background-color: #FFFFFF;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     width: 332px;
     height: 49px;
+
 }
 
 .search__field {
 
+    display: flex;
     height: 21px;
-    width: 147px;
-    margin-left: 67px;
+    margin: auto;
 
 }
 
-.search__button {
 
-;
-
-}
 
 .fa-solid.fa-location-dot {
 
