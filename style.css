@@ -2,16 +2,11 @@ html {
 
     max-width: 1400px;
     font-family: Raleway;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-.logo {
-
-    width: 61,09px;
-    height: 19px;
-    align-items: center;
-
-}
 
 li {
 
@@ -23,16 +18,14 @@ li {
 
 .nav__hosts {
 
-    font-family: Raleway;
     font-size: 16px;
     text-align: center;
-    
+
 
 }
 
 .nav__activity {
 
-    font-family: Raleway;
     font-size: 16px;
     text-align: center;
 
@@ -41,7 +34,7 @@ li {
 .nav__links {
 
     text-decoration: none;
-    color:black;
+    color: black;
 
 }
 
@@ -53,13 +46,18 @@ li {
 }
 
 .header__logo {
+
     margin-top: auto;
     margin-bottom: auto;
+    width: 61, 09px;
+    height: 19px;
+    align-items: center;
+
 }
 
 .nav__links:hover {
 
-    color:#0065FC;
+    color: #0065FC;
     text-decoration: 2px underline;
     text-underline-offset: -40px;
 
@@ -76,6 +74,7 @@ h1 {
 h2 {
 
     font-size: 18px;
+    margin: 0;
 }
 
 h3 {
@@ -85,24 +84,30 @@ h3 {
     margin: 0;
 }
 
-header {
+.header {
+
     margin-left: 55px;
+    margin-bottom: 40px;
+
 }
 
 .subtitle {
 
-    font-family: Raleway;
     font-size: 16px;
     margin-top: 8px;
 
 }
 
+.search__section {
+
+    margin-left: 55px;
+
+}
 
 
 .search__bar {
 
     display: flex;
-    margin-left: 55px;
     background-color: #FFFFFF;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
@@ -116,7 +121,7 @@ header {
 
     display: flex;
     width: 200px;
-    
+
 }
 
 .search__field {
@@ -141,7 +146,7 @@ header {
 
 .search__button {
 
-    display:flex;
+    display: flex;
     background-color: #0065FC;
     height: 49px;
     width: 110px;
@@ -152,7 +157,7 @@ header {
     border-radius: 0px 15px 15px 0px;
     position: relative;
     right: -46px;
-   
+
 }
 
 .fa-location-dot {
@@ -178,7 +183,6 @@ header {
     display: flex;
     flex-direction: row;
     margin-top: 46px;
-    margin-left: 62px;
     width: 914px;
     height: 50px;
     gap: 40px;
@@ -187,7 +191,6 @@ header {
 .filters__text {
 
     display: flex;
-    font-family: Raleway;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -220,9 +223,9 @@ header {
     background-color: #DEEBFF;
 }
 
-.fa-money-bill-wave, 
-.fa-person, 
-.fa-heart, 
+.fa-money-bill-wave,
+.fa-person,
+.fa-heart,
 .fa-dog,
 .fa-star,
 .fa-chart-line {
@@ -234,8 +237,7 @@ header {
 .result__number {
 
     display: flex;
-    margin-top: 38px; 
-    margin-left: 59px;
+    margin-top: 38px;
     align-items: center;
 
 }
@@ -260,21 +262,24 @@ header {
 
     display: flex;
     padding-left: 50px;
-    
+
 }
 
 
 .cards__results {
-    
+
     margin-top: 39px;
     padding-left: 40px;
     padding-right: 40px;
-    width: 880px;
+    width: 61.11%;
     height: 626px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    flex-shrink: 0;
+
 }
+
+
+
 
 .title__results {
 
@@ -283,45 +288,44 @@ header {
 
 }
 
+.title__results__popular {
+
+    margin-top: 42px;
+
+}
+
 .popular {
 
     display: flex;
     flex-direction: column;
     padding-left: 37px;
-    margin-left: 40px;
+    margin-left: 2.77%;
     margin-top: 39px;
-    width: 420px;
-    height: 625px;
+    width: 30%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    flex-shrink: 0;
 
 }
 
-.top__results {
+.hosts__results {
 
     display: flex;
-    gap: 31px;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
-.bottom__results {
-
-    display: flex;
-    margin-top: 30px;
-    gap: 31px;
-    
-}
 
 .card {
 
     display: flex;
     flex-direction: column;
-    width: 246px;
-    height: 199px;
+    width: 30%;
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    padding: 5px;
+    margin-bottom: 20px;
 
 }
 
@@ -329,7 +333,7 @@ header {
 
     margin-top: 40px;
     margin-left: 4px;
-    
+
 }
 
 .card__img {
@@ -338,7 +342,6 @@ header {
     width: 100%;
     height: 124px;
     object-fit: cover;
-    border: 5px solid #FFFFFF;
     box-sizing: border-box;
 
 }
@@ -352,23 +355,21 @@ header {
 
 .card__text {
 
-    margin-top: 9px;
+    margin-top: 4px;
     font-size: 14px;
-    margin-bottom: 0;
+    margin-bottom: 4px;
 
 
 }
 
-.card__text__popular {
-
-
-}
+.card__text__popular {}
 
 
 
 .card__stars {
 
-
+    display: flex;
+    margin-bottom: 4px;
 
 }
 
@@ -378,18 +379,28 @@ header {
 
 }
 
-.card__link:visited {
+.footer__link:active,
+.footer__link:hover {
+
+    color: black;
+    text-decoration: none;
+
+}
+
+.footer__link:visited {
 
     color: black;
 
 }
 
 
-.card__link {
+
+.card__link,
+.footer__link {
 
     text-decoration: none;
     color: black;
-    
+
 }
 
 .popular__header {
@@ -437,7 +448,7 @@ header {
     object-fit: cover;
     box-sizing: border-box;
 
-    
+
 }
 
 .popular__content {
@@ -452,7 +463,7 @@ header {
 
 .popular__name {
 
-
+    width: 160px;
 
 }
 
@@ -465,13 +476,20 @@ header {
 .card__stars__popular {
 
     display: flex;
-    margin-top: 50px;
+    margin-top: 41px;
+
+}
+
+.card__stars_popular__last {
+
+    margin-top: 62px;
 
 }
 
 .fa-star {
 
     font-size: 12px;
+
 }
 
 .title__activity {
@@ -487,16 +505,17 @@ header {
     display: flex;
     margin-top: 19px;
     margin-left: 50px;
-    gap: 43px;
+    gap: 2.98%;
 }
 
 .activity__card {
 
     display: flex;
     flex-direction: column;
+    width: 20.97%;
     background-color: white;
-    border: 1px solid #D9D9D9;
     border-radius: 20px;
+    border: none;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 
 }
@@ -505,7 +524,7 @@ header {
 .activity__img__container {
 
     display: flex;
-    width: 302px;
+    width: 100%;
     height: 389px;
 
 }
@@ -529,3 +548,41 @@ header {
 
 
 }
+
+.footer {
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    margin-top: 61px;
+
+}
+
+ul {
+
+    padding-left: 0;
+
+}
+
+.footer__list {}
+
+.footer__block {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical__list {
+
+    display: block;
+    margin-bottom: 12px;
+
+}
+
+.footer__title {
+
+    margin-top: 45px;
+
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {}
