@@ -1,5 +1,6 @@
 body {
 
+    width: 95%;
     max-width: 1400px;
     font-family: Raleway;
     margin-left: auto;
@@ -64,7 +65,8 @@ li {
 
 }
 
-.nav__hosts {
+.nav__hosts,
+.nav__activity {
 
     font-size: 16px;
     text-align: center;
@@ -86,14 +88,6 @@ li {
     text-underline-offset: -40px;
 
 }
-
-.nav__activity {
-
-    font-size: 16px;
-    text-align: center;
-
-}
-
 
 
 .subtitle {
@@ -164,7 +158,7 @@ li {
     display: flex;
     background-color: #0065FC;
     height: 49px;
-    width: 110px;
+    width: 90px;
     color: white;
     border: none;
     margin: auto;
@@ -178,7 +172,6 @@ li {
 .filters {
 
     display: flex;
-    /*     height: 50px; */
     margin-top: 46px;
 }
 
@@ -308,6 +301,7 @@ li {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     padding: 5px;
     margin-bottom: 20px;
+    height: 220px;
 
 }
 
@@ -317,6 +311,7 @@ li {
 
     text-decoration: none;
     color: black;
+    height: 100%;
 
 
 }
@@ -325,7 +320,7 @@ li {
 
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 124px;
+    height: 60%;
     object-fit: cover;
     box-sizing: border-box;
 
@@ -337,6 +332,7 @@ li {
     flex-direction: column;
     margin-top: 4px;
     margin-left: 16px;
+    height: 35%;
 
 }
 
@@ -498,7 +494,8 @@ li {
 
     display: flex;
     margin-top: 19px;
-    gap: 3%;
+    justify-content: space-between;
+
 }
 
 .activity__card {
@@ -585,10 +582,29 @@ li {
 
 }
 
+
+@media all and (min-width: 769px) and (max-width: 798px) {
+
+    .activity__fort {
+
+        margin-top: 5px;
+        height: 30px;
+
+    }
+}
+
 /* -------------- Tablette -------------- */
 
 @media all and (min-width: 768px) and (max-width: 992px) {
 
+
+    body {
+
+        width: 95%;
+        max-width: 768px;
+        margin: auto;
+
+    }
 
     .filters {
 
@@ -596,13 +612,22 @@ li {
         flex-wrap: nowrap;
     }
 
+    .filters__button {
+
+        padding: 4px 10px;
+
+    }
+
 
     .btn__group {
 
         display: flex;
-        flex-wrap: nowrap;
         flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 5px;
+
     }
+
 
     .cards {
 
@@ -611,12 +636,14 @@ li {
 
     .cards__results {
         width: 100%;
+        box-sizing: border-box;
     }
 
     .popular {
 
         width: 100%;
         margin-left: 0;
+        box-sizing: border-box;
 
     }
 
@@ -644,6 +671,7 @@ li {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        min-width: 30%;
 
     }
 
@@ -677,18 +705,23 @@ li {
 
 /* -------------- Smartphones -------------- */
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
+
+
+    .search__section,
+    .cards__results,
+    .activities {
+
+        width: 85%;
+        margin: auto;
+
+    }
 
     li {
 
         padding-right: unset;
         width: 50%;
 
-    }
-
-    li:hover {
-
-        border-bottom:
     }
 
     .nav__menu {
@@ -712,23 +745,31 @@ li {
 
     }
 
+    .nav__hosts,
+    .nav__activity {
+
+        font-size: 16px;
+        text-align: center;
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 20px;
+
+
+    }
+
+    .nav__hosts:hover,
+    .nav__activity:hover {
+
+        border-bottom: 2px solid #0065FC;
+        padding-bottom: 20px;
+
+    }
+
     .nav__links:hover {
 
-        text-underline-offset: 30px;
+        text-decoration: none;
 
     }
 
-    .nav__links {
-
-        /*         text-underline-offset: 30px;
-        text-decoration: 2px underline #F2F2F2; */
-    }
-
-    .search__section {
-
-        margin-left: unset;
-
-    }
 
     .mglass {
 
@@ -748,9 +789,32 @@ li {
 
     }
 
+    .search__bar {
+
+        width: 100%;
+
+    }
+
+    .search__form {
+
+        width: 100%;
+    }
+
+    .search__field {
+
+        width: 100%;
+
+    }
+
     .filters {
 
         flex-wrap: wrap;
+    }
+
+    .filters__button {
+
+        font-size: 14px;
+
     }
 
     .cards {
@@ -764,7 +828,6 @@ li {
 
     .cards__results {
 
-        width: 100%;
         padding-left: 0;
         padding-right: 0;
         background-color: white;
@@ -781,17 +844,24 @@ li {
     .popular {
 
         width: 100%;
-        margin-left: 0;
-        padding-left: 0;
-        width: 100%;
-        border: none;
-        border-radius: 0;
+        margin-left: unset;
+        padding-left: unset;
+        padding-right: unset;
+        border: unset;
+        border-radius: unset;
+    }
+
+    .popular__header,
+    .popular__results {
+
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
 
     .card {
 
-        width: 100%;
+        width: 97%;
     }
 
 
@@ -824,7 +894,7 @@ li {
 
     .activity__img__container {
 
-        height: 160px;
+        height: 134px;
 
     }
 
@@ -832,7 +902,7 @@ li {
 
         flex-direction: column;
         padding-bottom: 61px;
-        padding-left: 15px;
+        padding-left: 30px;
     }
 
     .footer__list {
